@@ -28,8 +28,8 @@ extension ConfiguartionViewController {
     }
     
     func setUPcredentials() {
-        merchantKey.text = "5d8eaed9-068e-4d1a-8d9e-75e5194adfbe"//"a087f4ca-9890-407b-9c2f-7630836cc020"
-        passwordKey.text = "41ec06d8-fcb5-4618-96c6-af12e69d59ae"//"df0fc687-783b-4058-af63-9e876444b357"
+        merchantKey.text = "a087f4ca-9890-407b-9c2f-7630836cc020" //"5d8eaed9-068e-4d1a-8d9e-75e5194adfbe"
+        passwordKey.text = "a6899557-4cb3-41ab-9df3-a6540b23ab60"//"41ec06d8-fcb5-4618-96c6-af12e69d59ae"
     }
     
     func setupCurrency() {
