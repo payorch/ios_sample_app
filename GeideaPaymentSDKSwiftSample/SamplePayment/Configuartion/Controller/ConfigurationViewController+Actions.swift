@@ -156,26 +156,9 @@ extension ConfiguartionViewController {
         passwordKey.text = ""
     }
     
-    @objc func segmentAction(_ sender: Any) {
-        switch segment.selectedSegmentIndex {
-        case 0:
-            GeideaPaymentAPI.setEnvironment(environment: Environment.prod)
-            changeToProdCredentials()
-            break
-        case 1:
-            GeideaPaymentAPI.setEnvironment(environment: Environment.test)
-            setUPcredentials()
-            viewModel.updateCredentials(key: merchantKey.text, password: passwordKey.text)
-            break
-        default:
-            break
-        }
-        viewModel.refreshConfig()
-    }
-    
     func changeToProdCredentials() {
-        merchantKey.text = "a087f4ca-9890-407b-9c2f-7630836cc020"
-        passwordKey.text = "a6899557-4cb3-41ab-9df3-a6540b23ab60"
+        merchantKey.text = ""
+        passwordKey.text = ""
         viewModel.updateCredentials(key: merchantKey.text, password: passwordKey.text)
     }
 }
