@@ -11,29 +11,19 @@ import GeideaPaymentSDK
 extension ConfiguartionViewController {
     
     func setupDemoData() {
-        setupSegmentData()
         setUPcredentials()
         setupCurrency()
         setupCallbackUrl()
         setupDetails()
     }
     
-    func setupSegmentData() {
-        if segment.selectedSegmentIndex == 1 {
-            GeideaPaymentAPI.setEnvironment(environment: Environment.test)
-        } else {
-            GeideaPaymentAPI.setEnvironment(environment: Environment.prod)
-        }
-        viewModel.refreshConfig()
-    }
-    
     func setUPcredentials() {
-        merchantKey.text = "a087f4ca-9890-407b-9c2f-7630836cc020" //"5d8eaed9-068e-4d1a-8d9e-75e5194adfbe"
-        passwordKey.text = "a6899557-4cb3-41ab-9df3-a6540b23ab60"//"41ec06d8-fcb5-4618-96c6-af12e69d59ae"
+        merchantKey.text = ""
+        passwordKey.text = ""
     }
     
     func setupCurrency() {
-        currencyTextField.text = "SAR"
+        currencyTextField.text = "EGP"
     }
     
     func setupCallbackUrl() {

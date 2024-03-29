@@ -557,13 +557,17 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
     @IBAction func envSelectionTapped(_ sender: Any) {
         switch environmentSelection.selectedSegmentIndex {
-        case 0: GeideaPaymentAPI.setEnvironment(environment: Environment.dev)
+        case 0: GeideaPaymentAPI.setEnvironment(environment: Environment.eg_production)
             break
-        case 1: GeideaPaymentAPI.setEnvironment(environment: Environment.test)
+        case 1: GeideaPaymentAPI.setEnvironment(environment: Environment.eg_preproduction)
             break
-        case 2: GeideaPaymentAPI.setEnvironment(environment: Environment.preprod)
+        case 2: GeideaPaymentAPI.setEnvironment(environment: Environment.uae_production)
             break
-        case 3: GeideaPaymentAPI.setEnvironment(environment: Environment.prod)
+        case 3: GeideaPaymentAPI.setEnvironment(environment: Environment.uae_preproduction)
+            break
+        case 4: GeideaPaymentAPI.setEnvironment(environment: Environment.ksa_production)
+            break
+        case 5: GeideaPaymentAPI.setEnvironment(environment: Environment.ksa_preproduction)
             break
         default:
             break
