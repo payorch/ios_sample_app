@@ -63,6 +63,7 @@ class ConfiguartionViewController: UIViewController {
             string: "API Password",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.black]
         )
+        textField.isSecureTextEntry = true
         textField.borderStyle = .roundedRect
         textField.font =  UIFont.systemFont(ofSize: 14, weight: .regular)
         return textField
