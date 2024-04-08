@@ -56,7 +56,12 @@ extension ConfiguartionViewController {
             billingCityNameTextField.text = config.billingCityName
             billingStreetNameTextField.text = config.billingStreetName
             billingPostCodeTextField.text = config.billingPostCode
-            
+            let list  = environmentList.filter { env in
+                env.name == config.environment
+            }
+            let env = list.first ?? Environment.uae_production
+            selectedEnvironment = env
+            updateEnvironment()
         } else {
             customerEmailTextField.text = "somemail@end.com"
             merchantReferenceTextField.text = "1234"
