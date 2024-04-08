@@ -164,7 +164,8 @@ extension ConfiguartionViewController {
             billingCountry: billingCountryTextField.text,
             billingCityName: billingCityNameTextField.text,
             billingStreetName: billingStreetNameTextField.text,
-            billingPostCode: billingPostCodeTextField.text
+            billingPostCode: billingPostCodeTextField.text,
+            environment: environmentTextField.text
         )
         config.saveToUserDefaults()
         let alert = UIAlertController(title: "", message: "Configuration Saved Successfully.", preferredStyle: .alert)
@@ -209,7 +210,7 @@ struct Configuration: Codable {
     let billingCityName: String?
     let billingStreetName: String?
     let billingPostCode: String?
-    
+    let environment: String?
     // Function to save Configuration to UserDefaults
        func saveToUserDefaults() {
            do {

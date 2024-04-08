@@ -393,15 +393,17 @@ class ConfiguartionViewController: UIViewController {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardDidHideNotification, object: nil)
     }
     
-    var selectedEnvironment: Environment = Environment.uae_production
+    var selectedEnvironment: Environment?
     let environmentList = Environment.allCases
 }
 
 extension ConfiguartionViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func updateEnvironment() {
-        environmentTextField.text = selectedEnvironment.name
-        GeideaPaymentAPI.setEnvironment(environment: selectedEnvironment)
+        if let env = selectedEnvironment {
+            environmentTextField.text = env.name
+            GeideaPaymentAPI.setEnvironment(environment: env)
+        }
     }
     
     func createPickerView() {
