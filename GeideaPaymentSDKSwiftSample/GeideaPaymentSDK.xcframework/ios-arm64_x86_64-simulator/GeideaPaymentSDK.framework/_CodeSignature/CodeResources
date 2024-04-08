@@ -118,7 +118,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qMdDsqoFyWCxspfnNUf5xc0PlX8=
+		WUBta5pVWwi7EH33KPB+MEgtKW4=
 		</data>
 		<key>InstallmentViewController.nib</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>Modules/GeideaPaymentSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		gpVjhh0oxil1MVERqe4hn/xxAVo=
+		ssoKQO7dBhJcoweMU6sVPeDKCN0=
 		</data>
 		<key>Modules/GeideaPaymentSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -154,7 +154,7 @@
 		</data>
 		<key>Modules/GeideaPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		gpVjhh0oxil1MVERqe4hn/xxAVo=
+		ssoKQO7dBhJcoweMU6sVPeDKCN0=
 		</data>
 		<key>Modules/GeideaPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -618,7 +618,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			z/fcBMKKvQ+qOWF8NmqHWeh11Flf9y937sjFFUiJWYI=
+			1uRyncXt+0PAC9gXRzC9v7O+f1Hb3Cv3L0Hidtq5hOo=
 			</data>
 		</dict>
 		<key>Modules/GeideaPaymentSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -653,7 +653,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			z/fcBMKKvQ+qOWF8NmqHWeh11Flf9y937sjFFUiJWYI=
+			1uRyncXt+0PAC9gXRzC9v7O+f1Hb3Cv3L0Hidtq5hOo=
 			</data>
 		</dict>
 		<key>Modules/GeideaPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
