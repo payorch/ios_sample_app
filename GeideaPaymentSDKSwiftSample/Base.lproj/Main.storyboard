@@ -946,14 +946,11 @@
                                 <rect key="frame" x="8" y="92" width="398" height="32"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="E0h-bs-CEC">
-                                        <rect key="frame" x="8" y="0.0" width="677" height="32"/>
+                                        <rect key="frame" x="8" y="0.0" width="593" height="32"/>
                                         <segments>
                                             <segment title="EGY-PROD"/>
-                                            <segment title="EGY-PREPROD"/>
                                             <segment title="UAE-PROD"/>
-                                            <segment title="UAE-PREPROD"/>
                                             <segment title="KSA-PROD"/>
-                                            <segment title="KSA-PREPROD"/>
                                         </segments>
                                         <connections>
                                             <action selector="envSelectionTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="4oL-bG-JmL"/>

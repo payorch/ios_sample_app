@@ -393,7 +393,7 @@ class ConfiguartionViewController: UIViewController {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardDidHideNotification, object: nil)
     }
     
-    var selectedEnvironment: Environment = Environment.uae_preproduction
+    var selectedEnvironment: Environment = Environment.uae_production
     let environmentList = Environment.allCases
 }
 
