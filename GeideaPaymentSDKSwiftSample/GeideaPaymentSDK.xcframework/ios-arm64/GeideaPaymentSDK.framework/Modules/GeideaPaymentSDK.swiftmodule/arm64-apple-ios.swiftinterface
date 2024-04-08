@@ -898,12 +898,9 @@ extension Foundation.JSONSerialization {
   required public init(from decoder: any Swift.Decoder) throws
 }
 @objc public enum Environment : Swift.Int {
-  case eg_production
-  case eg_preproduction
+  case egy_production
   case uae_production
-  case uae_preproduction
   case ksa_production
-  case ksa_preproduction
   public var name: Swift.String {
     get
   }

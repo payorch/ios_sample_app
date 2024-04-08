@@ -110,7 +110,7 @@
 		</data>
 		<key>Headers/GeideaPaymentSDK-Swift.h</key>
 		<data>
-		2be86qxKk0TR1gnCEF7Y6X4rJjo=
+		zxkJwnqVk8Yis3q3VvaZw3TWqTY=
 		</data>
 		<key>Headers/GeideaPaymentSDK.h</key>
 		<data>
@@ -134,11 +134,11 @@
 		</data>
 		<key>Modules/GeideaPaymentSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		ssoKQO7dBhJcoweMU6sVPeDKCN0=
+		V7qOtnAreHWzWnbzyaxsce4witM=
 		</data>
 		<key>Modules/GeideaPaymentSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		k6/KUvnDHlRWGzXKoKtxgutn5po=
+		HU/z3wh/zfMRlyYiC7HuegIe5R4=
 		</data>
 		<key>Modules/GeideaPaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -146,19 +146,19 @@
 		</data>
 		<key>Modules/GeideaPaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		k6/KUvnDHlRWGzXKoKtxgutn5po=
+		HU/z3wh/zfMRlyYiC7HuegIe5R4=
 		</data>
 		<key>Modules/GeideaPaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VbpxWjsxDU4aWgF9WccE01Kq0NQ=
+		nuhVoUwrxFamxJajLAhrSqCy+gY=
 		</data>
 		<key>Modules/GeideaPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ssoKQO7dBhJcoweMU6sVPeDKCN0=
+		V7qOtnAreHWzWnbzyaxsce4witM=
 		</data>
 		<key>Modules/GeideaPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		oe4En4DnkVFqQg6cSQO7MMFsl4o=
+		xEOSMikXEqI88RP+uMH5KemncLY=
 		</data>
 		<key>Modules/GeideaPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -166,11 +166,11 @@
 		</data>
 		<key>Modules/GeideaPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		oe4En4DnkVFqQg6cSQO7MMFsl4o=
+		xEOSMikXEqI88RP+uMH5KemncLY=
 		</data>
 		<key>Modules/GeideaPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		GkHeW/k7YzriY0UBL1J4SDqyWWQ=
+		eP2uEcJHhKUAOIH8tLiJJtxjhI8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -583,7 +583,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lL8JVBqTBFAooAAYgbYnYHu5fuIWETa0QnyyQdB2GF0=
+			VUJtZSGoyXDRGrwtfTUppH+W1NGUcU9Tym928vLF0JY=
 			</data>
 		</dict>
 		<key>Headers/GeideaPaymentSDK.h</key>
@@ -618,14 +618,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1uRyncXt+0PAC9gXRzC9v7O+f1Hb3Cv3L0Hidtq5hOo=
+			qb/gfVbcv6k/vFXboB7ZxoiDy8zDhECdMFykpuWmXIo=
 			</data>
 		</dict>
 		<key>Modules/GeideaPaymentSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KDxwXO93IMxepOt658DQ0OqC+05JgIehUGP0VdfGqW8=
+			30MQYkrFLO8OXJbSqnDAlL4HVYD2gndZXvt50Db2aBc=
 			</data>
 		</dict>
 		<key>Modules/GeideaPaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -639,28 +639,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KDxwXO93IMxepOt658DQ0OqC+05JgIehUGP0VdfGqW8=
+			30MQYkrFLO8OXJbSqnDAlL4HVYD2gndZXvt50Db2aBc=
 			</data>
 		</dict>
 		<key>Modules/GeideaPaymentSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WQPsP9/HnuaUDI4kwNYtTffUAcI1C5l3eaz1ZCSR+qo=
+			0UgbN0FOevT5MpggXjC1IJ3CvbtGuR6z3oVyuzB5+LU=
 			</data>
 		</dict>
 		<key>Modules/GeideaPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1uRyncXt+0PAC9gXRzC9v7O+f1Hb3Cv3L0Hidtq5hOo=
+			qb/gfVbcv6k/vFXboB7ZxoiDy8zDhECdMFykpuWmXIo=
 			</data>
 		</dict>
 		<key>Modules/GeideaPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pPusDqwiSk3MECpe6ZpOrj4aC74c+nrekrHftJVbbuw=
+			pNoRFgj25PVrrXqwilxurcjqHDT689XWqYbeJ45e9RI=
 			</data>
 		</dict>
 		<key>Modules/GeideaPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -674,14 +674,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pPusDqwiSk3MECpe6ZpOrj4aC74c+nrekrHftJVbbuw=
+			pNoRFgj25PVrrXqwilxurcjqHDT689XWqYbeJ45e9RI=
 			</data>
 		</dict>
 		<key>Modules/GeideaPaymentSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WyW1R4Aus4Y6rPFVzJvq8ggeFyP5qSGqhrf9jrBOF5U=
+			poeqszF285JPMtR1hUtwqjzLepEQ8fZ5Dxh4Xm/qET4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
