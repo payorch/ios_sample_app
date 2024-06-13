@@ -1585,6 +1585,7 @@ SWIFT_CLASS("_TtC16GeideaPaymentSDK13GeideaBNPLAPI")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class PaymentResponse;
 @class NSTimer;
 @class UIImage;
 enum Language : NSInteger;
@@ -1987,6 +1988,7 @@ SWIFT_CLASS("_TtC16GeideaPaymentSDK16GeideaPaymentAPI")
 /// version:
 /// 1.0
 + (void)payWithGeideaFormWithTheAmount:(GDAmount * _Nonnull)amount showAddress:(BOOL)showAddress showEmail:(BOOL)showEmail showReceipt:(BOOL)showReceipt tokenizationDetails:(GDTokenizationDetails * _Nullable)tokenizationDetails customerDetails:(GDCustomerDetails * _Nullable)customerDetails applePayDetails:(GDApplePayDetails * _Nullable)applePayDetails config:(GDConfigResponse * _Nullable)config paymentIntentId:(NSString * _Nullable)paymentIntentId qrDetails:(GDQRDetails * _Nullable)qrDetails bnplItems:(NSArray<GDBNPLItem *> * _Nullable)bnplItems cardPaymentMethods:(NSArray<NSString *> * _Nullable)cardPaymentMethods paymentSelectionMethods:(NSArray<GDPaymentSelectionMetods *> * _Nullable)paymentSelectionMethods viewController:(UIViewController * _Nonnull)viewController completion:(void (^ _Nonnull)(GDOrderResponse * _Nullable, GDErrorResponse * _Nullable))completion;
++ (void)payWithGeideaHppWithTheAmount:(GDAmount * _Nonnull)amount showAddress:(BOOL)showAddress showEmail:(BOOL)showEmail showReceipt:(BOOL)showReceipt tokenizationDetails:(GDTokenizationDetails * _Nullable)tokenizationDetails customerDetails:(GDCustomerDetails * _Nullable)customerDetails applePayDetails:(GDApplePayDetails * _Nullable)applePayDetails config:(GDConfigResponse * _Nullable)config paymentIntentId:(NSString * _Nullable)paymentIntentId qrDetails:(GDQRDetails * _Nullable)qrDetails bnplItems:(NSArray<GDBNPLItem *> * _Nullable)bnplItems cardPaymentMethods:(NSArray<NSString *> * _Nullable)cardPaymentMethods paymentSelectionMethods:(NSArray<GDPaymentSelectionMetods *> * _Nullable)paymentSelectionMethods viewController:(UIViewController * _Nonnull)viewController completion:(void (^ _Nonnull)(PaymentResponse * _Nullable, GDErrorResponse * _Nullable))completion;
 /// Starting paying QR flow using Geidea Form
 /// <ul>
 ///   <li>
@@ -3037,6 +3039,14 @@ typedef SWIFT_ENUM(NSInteger, PaymentOperation, open) {
   PaymentOperationAuthorizeCapture = 2,
   PaymentOperationNONE = 3,
 };
+
+
+SWIFT_CLASS("_TtC16GeideaPaymentSDK15PaymentResponse")
+@interface PaymentResponse : NSObject
+- (nonnull instancetype)initWithOrderId:(NSString * _Nonnull)orderId responseCode:(NSString * _Nonnull)responseCode responseMessage:(NSString * _Nonnull)responseMessage sessionId:(NSString * _Nonnull)sessionId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
 
 typedef SWIFT_ENUM(NSInteger, PaymentType, open) {
   PaymentTypeCard = 0,

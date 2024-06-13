@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.9.2 effective-4.1.50 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -O -module-name GeideaPaymentSDK
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 4 -enforce-exclusivity=checked -O -module-name GeideaPaymentSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CommonCrypto
 import Contacts
@@ -356,6 +356,7 @@ public struct ExpiryDateParams : Swift.Codable {
   @objc public static func pay(theAmount amount: GeideaPaymentSDK.GDAmount, withCardDetails cardDetails: GeideaPaymentSDK.GDCardDetails, initializeResponse: GeideaPaymentSDK.GDInitiateAuthenticateResponse? = nil, config: GeideaPaymentSDK.GDConfigResponse?, isHPP: Swift.Bool = false, showReceipt: Swift.Bool, andTokenizationDetails tokenizationDetails: GeideaPaymentSDK.GDTokenizationDetails?, andPaymentIntentId paymentIntentId: Swift.String? = nil, andCustomerDetails customerDetails: GeideaPaymentSDK.GDCustomerDetails?, orderId: Swift.String? = nil, paymentMethods: [Swift.String]? = nil, sessionId: Swift.String? = nil, dismissAction: ((GeideaPaymentSDK.GDCancelResponse?, GeideaPaymentSDK.GDErrorResponse?) -> Swift.Void)? = nil, navController: UIKit.UIViewController, completion: @escaping (GeideaPaymentSDK.GDOrderResponse?, GeideaPaymentSDK.GDErrorResponse?) -> Swift.Void)
   @objc public static func initiateAuthenticate(theAmount amount: GeideaPaymentSDK.GDAmount, withCardNumber cardNumber: Swift.String?, andTokenizationDetails tokenizationDetails: GeideaPaymentSDK.GDTokenizationDetails?, andPaymentIntentId paymentIntentId: Swift.String? = nil, andCustomerDetails customerDetails: GeideaPaymentSDK.GDCustomerDetails?, orderId: Swift.String? = nil, paymentMethods: [Swift.String]? = nil, dismissAction: ((GeideaPaymentSDK.GDCancelResponse?, GeideaPaymentSDK.GDErrorResponse?) -> Swift.Void)? = nil, navController: UIKit.UIViewController, completion: @escaping (GeideaPaymentSDK.GDInitiateAuthenticateResponse?, GeideaPaymentSDK.GDErrorResponse?, _ sessionId: Swift.String?) -> Swift.Void)
   @objc public static func payWithGeideaForm(theAmount amount: GeideaPaymentSDK.GDAmount, showAddress: Swift.Bool, showEmail: Swift.Bool, showReceipt: Swift.Bool, tokenizationDetails: GeideaPaymentSDK.GDTokenizationDetails? = nil, customerDetails: GeideaPaymentSDK.GDCustomerDetails?, applePayDetails: GeideaPaymentSDK.GDApplePayDetails? = nil, config: GeideaPaymentSDK.GDConfigResponse?, paymentIntentId: Swift.String? = nil, qrDetails: GeideaPaymentSDK.GDQRDetails? = nil, bnplItems: [GeideaPaymentSDK.GDBNPLItem]? = nil, cardPaymentMethods: [Swift.String]? = nil, paymentSelectionMethods: [GeideaPaymentSDK.GDPaymentSelectionMetods]? = nil, viewController: UIKit.UIViewController, completion: @escaping (GeideaPaymentSDK.GDOrderResponse?, GeideaPaymentSDK.GDErrorResponse?) -> Swift.Void)
+  @objc public static func payWithGeideaHpp(theAmount amount: GeideaPaymentSDK.GDAmount, showAddress: Swift.Bool, showEmail: Swift.Bool, showReceipt: Swift.Bool, tokenizationDetails: GeideaPaymentSDK.GDTokenizationDetails? = nil, customerDetails: GeideaPaymentSDK.GDCustomerDetails?, applePayDetails: GeideaPaymentSDK.GDApplePayDetails? = nil, config: GeideaPaymentSDK.GDConfigResponse?, paymentIntentId: Swift.String? = nil, qrDetails: GeideaPaymentSDK.GDQRDetails? = nil, bnplItems: [GeideaPaymentSDK.GDBNPLItem]? = nil, cardPaymentMethods: [Swift.String]? = nil, paymentSelectionMethods: [GeideaPaymentSDK.GDPaymentSelectionMetods]? = nil, viewController: UIKit.UIViewController, completion: @escaping (GeideaPaymentSDK.PaymentResponse?, GeideaPaymentSDK.GDErrorResponse?) -> Swift.Void)
   @objc public static func payQRWithGeideaForm(theAmount amount: GeideaPaymentSDK.GDAmount, qrDetails: GeideaPaymentSDK.GDQRDetails, config: GeideaPaymentSDK.GDConfigResponse?, showReceipt: Swift.Bool, orderId: Swift.String?, callbackUrl: Swift.String?, viewController: UIKit.UIViewController, completion: @escaping (GeideaPaymentSDK.GDOrderResponse?, GeideaPaymentSDK.GDErrorResponse?) -> Swift.Void)
   @objc public static func payQR(theAmount amount: GeideaPaymentSDK.GDAmount, qrDetails: GeideaPaymentSDK.GDQRDetails?, config: GeideaPaymentSDK.GDConfigResponse?, showReceipt: Swift.Bool, merchantName: Swift.String?, orderId: Swift.String?, callbackUrl: Swift.String?, viewController: UIKit.UIViewController, completion: @escaping (GeideaPaymentSDK.GDOrderResponse?, GeideaPaymentSDK.GDErrorResponse?) -> Swift.Void)
   @objc public static func payWithToken(theAmount amount: GeideaPaymentSDK.GDAmount, withTokenId token: Swift.String, tokenizationDetails: GeideaPaymentSDK.GDTokenizationDetails, config: GeideaPaymentSDK.GDConfigResponse?, showReceipt: Swift.Bool, andPaymentIntentId paymentIntentId: Swift.String? = nil, andCustomerDetails customerDetails: GeideaPaymentSDK.GDCustomerDetails?, navController: UIKit.UIViewController, completion: @escaping (GeideaPaymentSDK.GDOrderResponse?, GeideaPaymentSDK.GDErrorResponse?) -> Swift.Void)
@@ -638,6 +639,16 @@ extension Foundation.URL {
   @objc public var customerIdentifier: Swift.String?
   @objc public var customerPin: Swift.String?
   @objc public init(customerIdentifier: Swift.String?, customerPin: Swift.String?)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc public class PaymentResponse : ObjectiveC.NSObject, Swift.Codable {
+  final public let orderId: Swift.String
+  final public let responseCode: Swift.String
+  final public let responseMessage: Swift.String
+  final public let sessionId: Swift.String
+  @objc public init(orderId: Swift.String, responseCode: Swift.String, responseMessage: Swift.String, sessionId: Swift.String)
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
