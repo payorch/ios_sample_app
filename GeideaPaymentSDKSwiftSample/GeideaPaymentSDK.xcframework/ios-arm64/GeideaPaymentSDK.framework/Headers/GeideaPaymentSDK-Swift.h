@@ -326,8 +326,11 @@ SWIFT_CLASS("_TtC16GeideaPaymentSDK23ConfigCountriesResponse")
 
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentEgy_production = 0,
-  EnvironmentUae_production = 1,
-  EnvironmentKsa_production = 2,
+  EnvironmentEg_preproduction = 1,
+  EnvironmentUae_production = 2,
+  EnvironmentUae_preproduction = 3,
+  EnvironmentKsa_production = 4,
+  EnvironmentKsa_preproduction = 5,
 };
 
 

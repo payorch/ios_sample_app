@@ -910,8 +910,11 @@ extension Foundation.JSONSerialization {
 }
 @objc public enum Environment : Swift.Int {
   case egy_production
+  case eg_preproduction
   case uae_production
+  case uae_preproduction
   case ksa_production
+  case ksa_preproduction
   public var name: Swift.String {
     get
   }
